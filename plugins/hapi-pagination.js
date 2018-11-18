@@ -26,4 +26,4 @@ const options = {
 module.exports = {
   register: hapiPagination,
   options: options,
-}
+};

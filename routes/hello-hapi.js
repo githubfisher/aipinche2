@@ -12,4 +12,4 @@ module.exports = [
       description: '测试hello-hapi',
     },
   }
-]
+];
