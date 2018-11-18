@@ -1,9 +1,10 @@
 // routes/users.js
 
-const GROUP_NAME = 'users';
 const JWT = require('jsonwebtoken');
 const { paginationDefine } = require('../utils/router-helper');
 const models = require("../models");
+
+const GROUP_NAME = 'users';
 
 module.exports = [
   {
