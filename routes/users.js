@@ -1,10 +1,10 @@
 // routes/users.js
 
-const JWT = require('jsonwebtoken');
 const GROUP_NAME = 'users';
+const JWT = require('jsonwebtoken');
 const { paginationDefine } = require('../utils/router-helper');
-// 引入 models
 const models = require("../models");
+
 module.exports = [
   {
     method: 'GET',
@@ -19,7 +19,7 @@ module.exports = [
         limit: request.query.limit,
         offset: (request.query.page - 1) * request.query.limit,
       });
-      reply({results, totalCount})
+      reply({results, totalCount});
     },
     config: {
         tags: ['api', GROUP_NAME],
