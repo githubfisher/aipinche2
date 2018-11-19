@@ -34,11 +34,7 @@ const init = async () => {
 
   // 启动服务
   await server.start();
+  console.log(`Server running at: ${server.info.uri}`);
 };
 
-init().then(server => {
-  console.log(`Server running at: ${server.info.uri}`);
-})
-.catch(error => {
-  console.log(error)
-});
+init();
