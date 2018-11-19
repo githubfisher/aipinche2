@@ -44,9 +44,7 @@ module.exports = [
         };
         return JWT.sign(payload, process.env.JWT_SECRET);
       };
-      reply(generateJWT({
-        userId: 1,
-      }));
+      reply(generateJWT({userId: 1}));
     },
     config: {
       tags: ['api', GROUP_NAME],
