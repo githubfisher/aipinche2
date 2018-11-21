@@ -1,5 +1,5 @@
 // routes/hello-hapi.js
-const { jwtHeaderDefine } = require('../utils/router-helper');
+const jwtHeaderDefine = require('../validaters/auth');
 
 module.exports = [
   {
