@@ -1,3 +1,4 @@
+// plugins/hapi-auth-jwt2.js
 const config = require('../config');
 
 const validate = (decoded, request, callback) => {

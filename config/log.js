@@ -1,3 +1,4 @@
+// config/log.js
 const options = {
     ops: {
         interval: 1000

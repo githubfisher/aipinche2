@@ -1,3 +1,4 @@
+// config/mix.js
 const logOptions = require('./log');
 const base = require('./index');
 
