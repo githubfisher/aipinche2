@@ -2,6 +2,7 @@
 const GROUP_NAME = 'users';
 const paginationDefine = require('../validaters/pagination');
 const userHandler = require("../handlers/user");
+const loginHandler = require("../handlers/login");
 
 module.exports = [
   {
@@ -22,7 +23,7 @@ module.exports = [
   {
     method: 'POST',
     path: `/${GROUP_NAME}/createJWT`,
-    handler: userHandler.createJwt,
+    handler: loginHandler.createJwt,
     config: {
       tags: ['api', GROUP_NAME],
       description: '用于测试的用户 JWT 签发',
